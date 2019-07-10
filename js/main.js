@@ -116,6 +116,7 @@ function update(data) {
         .append("circle")
         .attr("class", "enter")
         .attr("fill", function(d) { return continentColor(d.continent); })
+        .attr("stroke","black")
         .merge(circles)
         .transition(t)
             .attr("cy", function(d){ return y(d.life_exp); })
